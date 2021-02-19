@@ -1,63 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".DetailsActivity">
 
     <ScrollView
+        android:id="@+id/scrollViewCont"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="77dp"
-        tools:layout_editor_absoluteY="335dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/linearLayoutV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/plantNameTV"
+                android:id="@+id/diseaseNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/predictConfidenceTV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Plant Name" />
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/diseaseTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Disease Name" />
-
-            <TextView
-                android:id="@+id/causativeAgentTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Causative Agent" />
-
-            <TextView
-                android:id="@+id/symptomsTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Symptoms" />
-
-            <TextView
-                android:id="@+id/causeTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Cause" />
-
-            <TextView
-                android:id="@+id/commentsTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Comments" />
-
-            <TextView
-                android:id="@+id/managementTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Management" />
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,7 @@
 
     <Button
         android:id="@+id/detect_btn"
-        android:layout_width="wrap_content"
+        android:layout_width="409dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
         android:text="@string/predict_btn_val"
@@ -45,13 +45,13 @@
         android:layout_width="56dp"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:contentDescription="@string/gallery_btn"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="@+id/fab_gallery"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/fab_gallery"
-        app:srcCompat="@android:drawable/ic_menu_camera"
-        android:focusable="true"
-        android:contentDescription="@string/gallery_btn" />
+        app:srcCompat="@android:drawable/ic_menu_camera" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_gallery"
@@ -59,13 +59,13 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:clickable="true"
+        android:contentDescription="@string/camera_btn"
+        android:focusable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/fab_camera"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_gallery"
-        android:focusable="true"
-        android:contentDescription="@string/camera_btn" />
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

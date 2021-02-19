@@ -1,23 +1,22 @@
 package com.lazarus.aippa_theplantdoctorbeta
 
+import android.app.Activity
+import android.content.Intent
 import android.content.pm.ActivityInfo
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
-import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.annotation.RequiresApi
-import android.widget.Toast
-import android.app.Activity
-import android.content.Intent
 import android.graphics.Matrix
+import android.os.Build
+import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.Gravity
-import android.view.View
-import android.widget.PopupWindow
-import kotlinx.android.synthetic.main.activity_main.*;
+import android.widget.Toast
+import androidx.annotation.RequiresApi
+import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,15 +58,27 @@ class MainActivity : AppCompatActivity() {
         detect_btn.setOnClickListener{
             Log.d("clicked!", "Detect button was clicked!")
             val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
-//            predictedTextView.text= results?.title+"\n Confidence:"+results?.confidence
-            Log.d("predicted Result", "title: "+results?.title+" confidence: "+ results?.confidence)
+//            predictedTextView.text= "Name: "+results?.title+"\n Confidence: "+confidencePer
 
-            val intent = Intent(this, ResultActivity::class.java)
-            intent.putExtra("popuptitle", "Result")
-            intent.putExtra("popuptext", results?.title+"\n Confidence:"+results?.confidence)
-            intent.putExtra("popupbtn", "OK")
-            intent.putExtra("darkstatusbar", false)
-            startActivity(intent)
+            val confidencePer = 100* results?.confidence!!
+            Log.d("predicted Result", "Name: " + results.title + "\n Confidence: " + confidencePer + " %")
+
+//          for another activity
+            val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
+                putExtra("titleN", "Prediction Result")
+                putExtra("diseaseName", "Disease Name: "+results.title)
+                putExtra("prediction_confidence", "Prediction $confidencePer % Confidence")
+//                putExtra("pictureCapture", mBitmap)
+            }
+            startActivity(intentDetailsActivity)
+
+//            for popup
+//            val intent = Intent(this, ResultActivity::class.java)
+//            intent.putExtra("popuptitle", "Result")
+//            intent.putExtra("popuptext", "Name: "+results?.title+"\n Confidence: "+confidencePer)
+//            intent.putExtra("popupbtn", "OK")
+//            intent.putExtra("darkstatusbar", false)
+//            startActivity(intent)
         }
     }
 
@@ -78,7 +89,11 @@ class MainActivity : AppCompatActivity() {
             if(resultCode == Activity.RESULT_OK && data != null) {
                 mBitmap = data.extras!!.get("data") as Bitmap
                 mBitmap = scaleImage(mBitmap)
-                val toast = Toast.makeText(this, ("Image crop to: w= ${mBitmap.width} h= ${mBitmap.height}"), Toast.LENGTH_LONG)
+                val toast = Toast.makeText(
+                    this,
+                    ("Image crop to: w= ${mBitmap.width} h= ${mBitmap.height}"),
+                    Toast.LENGTH_LONG
+                )
                 toast.setGravity(Gravity.BOTTOM, 0, 20)
                 toast.show()
                 leafImageView.setImageBitmap(mBitmap)
