@@ -59,8 +59,10 @@
                     android:textStyle="bold"
                     app:layout_constraintBottom_toTopOf="@+id/popup_window_button"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/popup_window_title" />
+                    app:layout_constraintTop_toBottomOf="@+id/popup_window_title"
+                    app:layout_constraintVertical_bias="0.245" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/popup_window_title"
@@ -92,6 +94,21 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:id="@+id/goDetailsBtn"
+                    android:layout_width="247dp"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="2dp"
+                    android:onClick="knowMore"
+                    android:text="@string/know_more"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/popup_window_button"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/popup_window_text" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

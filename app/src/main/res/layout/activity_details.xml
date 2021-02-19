@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="335dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/plantNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Plant Name" />
+
+            <TextView
+                android:id="@+id/diseaseTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disease Name" />
+
+            <TextView
+                android:id="@+id/causativeAgentTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Causative Agent" />
+
+            <TextView
+                android:id="@+id/symptomsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Symptoms" />
+
+            <TextView
+                android:id="@+id/causeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cause" />
+
+            <TextView
+                android:id="@+id/commentsTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comments" />
+
+            <TextView
+                android:id="@+id/managementTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Management" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

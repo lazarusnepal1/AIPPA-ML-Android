@@ -4,6 +4,7 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ArgbEvaluator
 import android.animation.ValueAnimator
+import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -111,9 +112,9 @@ class ResultActivity : AppCompatActivity() {
         win.attributes = winParams
     }
 
-//    fun readMore(view: View) {
-//        val intent = Intent(this, PesticidesActivity::class.java).apply {
-//        }
-//        startActivity(intent)
-//    }
+    fun knowMore(view: View) {
+        val intent = Intent(this, DetailsActivity::class.java).apply {
+        }
+        startActivity(intent)
+    }
 }
