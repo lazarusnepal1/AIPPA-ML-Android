@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AIPPA - The Plant Doctor (BETA)</string>
+    <string name="image_description">image here</string>
+    <string name="predict_btn_val">Predict</string>
+    <string name="gallery_btn">Go to gallery</string>
+    <string name="camera_btn">Open Camera</string>
+    <string name="predicted_value">Predicted Result</string>
+    <string name="ok_btn_pop">OK</string>
+    <string name="title_pop">Popup title</string>
+    <string name="text_pop">Popup Text</string>
+</resources>
