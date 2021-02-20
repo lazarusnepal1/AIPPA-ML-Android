@@ -1,16 +1,13 @@
 package com.lazarus.aippa_theplantdoctorbeta
 
 import android.content.Context
-import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import org.w3c.dom.Text
 
 class CustomAdapter(
         private var context: Context,
@@ -42,8 +39,8 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
     override fun onBindViewHolder(holder: CustomAdapter.MyViewHolder, position: Int) {
         Log.d("if condition:", "\n prediction: $diseaseNameString \n JSON:" +diseaseNameJSON[position])
 
-            holder.diseaseNameTV.text = diseaseNameJSON[position]
-            holder.diseaseN.text = diseaseNameString
+            holder.diseaseNameTV.text = diseaseNameJSON[position].toUpperCase()
+            holder.diseaseN.text = diseaseNameString.toUpperCase()
             holder.confPer.text = confPerString
             holder.causativeAgentTV.text = causativeAgentJSON[position]
             holder.causeTV.text = causeJSON[position]

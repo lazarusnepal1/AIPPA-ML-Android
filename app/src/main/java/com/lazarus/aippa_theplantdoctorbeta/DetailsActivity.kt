@@ -3,9 +3,6 @@ package com.lazarus.aippa_theplantdoctorbeta
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_details.*
@@ -54,13 +51,8 @@ class DetailsActivity : AppCompatActivity() {
         predictionConfidence = bundle?.getString("prediction_confidence", "Unknown %") ?: ""
 //        pictureCapture = bundle?.getByteArray("pictureCapture")!!
 
-//        Log.d("(Activity Details :: predicted Result)", "\n Name: $diseaseName \n Confidence: $predictionConfidence")
-//        tvConfidencePer.text = "Name: $diseaseName Confidence: $predictionConfidence"
         confPerStr = predictionConfidence
         diseaseNameStr = diseaseName
-//        diseaseNameTV.text = diseaseName
-//        predictConfidenceTV.text = predictionConfidence
-//        imgCaptureIV.setImageBitmap(pictureCapture)
 
 //        JSON
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
@@ -120,12 +112,6 @@ class DetailsActivity : AppCompatActivity() {
         }
         return json
     }
-
-//    fun goHome(view: View) {
-//        val intent = Intent(this, MainActivity::class.java).apply {
-//        }
-//        startActivity(intent)
-//    }
 
     fun goHome() {
         val intent = Intent(this, MainActivity::class.java).apply {

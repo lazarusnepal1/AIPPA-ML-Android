@@ -15,9 +15,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import java.io.ByteArrayOutputStream
 import java.io.IOException
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,12 +44,12 @@ class MainActivity : AppCompatActivity() {
             leafImageView.setImageBitmap(mBitmap)
         }
         fab_camera.setOnClickListener{
-            Log.d("\n camera!", "Camera button was clicked!\n")
+//            Log.d("\n camera!", "Camera button was clicked!\n")
             val callCameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(callCameraIntent, mCameraRequestCode)
         }
         fab_gallery.setOnClickListener{
-            Log.d("\n clicked!", "Gallery button was clicked!\n")
+//            Log.d("\n clicked!", "Gallery button was clicked!\n")
             val callGalleryIntent = Intent(Intent.ACTION_PICK)
             callGalleryIntent.type = "image/*"
             startActivityForResult(callGalleryIntent, mGalleryRequestCode)
@@ -63,13 +61,8 @@ class MainActivity : AppCompatActivity() {
 //            predictedTextView.text= "Name: "+results?.title+"\n Confidence: "+confidencePer
 
             val confidencePer = 100* results?.confidence!!
-            Log.d("predicted Result", "\n Disease Name: " + results.title + "\n Confidence: " + confidencePer + " %")
+//            Log.d("predicted Result", "\n Disease Name: " + results.title + "\n Confidence: " + confidencePer + " %")
 
-//            for another activity
-//            Log.d("mBitmap", mBitmap.toString())
-//            mBitmap.compress(Bitmap.CompressFormat.PNG, 0, ByteArrayOutputStream())
-//            val bitmapData = ByteArrayOutputStream().toByteArray()
-//            Log.d("compress bitmap", bitmapData.toString())
 
             val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
                 putExtra("titleN", "Prediction Result")
@@ -78,17 +71,9 @@ class MainActivity : AppCompatActivity() {
 //                putExtra("pictureCapture", bitmapData)
             }
             startActivity(intentDetailsActivity)
-
-//            for popup
-//            val intent = Intent(this, ResultActivity::class.java)
-//            intent.putExtra("popuptitle", "Result")
-//            intent.putExtra("popuptext", "Name: "+results?.title+"\n Confidence: "+confidencePer)
-//            intent.putExtra("popupbtn", "OK")
-//            intent.putExtra("darkstatusbar", false)
-//            startActivity(intent)
         }
         fab_help.setOnClickListener(){
-            val intent = Intent(this, HelpActivity::class.java).apply {
+            val intent = Intent(this, AboutActivity::class.java).apply {
             }
             startActivity(intent)
         }
@@ -122,18 +107,14 @@ class MainActivity : AppCompatActivity() {
                 } catch (e: IOException) {
                     e.printStackTrace()
                 }
-
                 println("Success!!!")
                 mBitmap = scaleImage(mBitmap)
                 leafImageView.setImageBitmap(mBitmap)
-
             }
         } else {
             Toast.makeText(this, "Unrecognized request code", Toast.LENGTH_LONG).show()
-
         }
     }
-
 
     fun scaleImage(bitmap: Bitmap?): Bitmap {
         val orignalWidth = bitmap!!.width

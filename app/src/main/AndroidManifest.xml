@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lazarus.aippa_theplantdoctorbeta" >
+    package="com.lazarus.aippa_theplantdoctorbeta">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_lazarus_launcher"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AIPPAThePlantDoctorBETA" >
-
-        <activity android:name=".HelpActivity" >
+        android:theme="@style/Theme.AIPPAThePlantDoctorBETA">
+        <activity
+            android:name=".AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/Theme.AIPPAThePlantDoctorBETA.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".DetailsActivity" >
+        <activity android:name=".DetailsActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

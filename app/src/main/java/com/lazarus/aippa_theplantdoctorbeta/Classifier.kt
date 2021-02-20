@@ -50,7 +50,6 @@ class Classifier(assetManager: AssetManager, modelPath: String, labelPath: Strin
 
     private fun loadLabelList(assetManager: AssetManager, labelPath: String): List<String> {
         return assetManager.open(labelPath).bufferedReader().useLines { it.toList() }
-
     }
 
     fun recognizeImage(bitmap: Bitmap): List<Classifier.Recognition> {
@@ -60,8 +59,6 @@ class Classifier(assetManager: AssetManager, modelPath: String, labelPath: Strin
         INTERPRETER.run(byteBuffer, result)
         return getSortedResult(result)
     }
-
-
 
     private fun convertBitmapToByteBuffer(bitmap: Bitmap): ByteBuffer {
         val byteBuffer = ByteBuffer.allocateDirect(4 * INPUT_SIZE * INPUT_SIZE * PIXEL_SIZE)
@@ -81,7 +78,6 @@ class Classifier(assetManager: AssetManager, modelPath: String, labelPath: Strin
         }
         return byteBuffer
     }
-
 
     private fun getSortedResult(labelProbArray: Array<FloatArray>): List<Classifier.Recognition> {
         Log.d("Classifier", "List Size:(%d, %d, %d)".format(labelProbArray.size,labelProbArray[0].size,LABEL_LIST.size))
