@@ -55,23 +55,28 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(callGalleryIntent, mGalleryRequestCode)
         }
         detect_btn.setOnClickListener{
-            Toast.makeText(this, "Predicting started", Toast.LENGTH_LONG).show()
             Log.d("\n clicked!", "Detect button was clicked!\n")
             val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
 //            predictedTextView.text= "Name: "+results?.title+"\n Confidence: "+confidencePer
-
-            val confidencePer = 100* results?.confidence!!
 //            Log.d("predicted Result", "\n Disease Name: " + results.title + "\n Confidence: " + confidencePer + " %")
 
-
-            val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
-                putExtra("titleN", "Prediction Result")
-                putExtra("diseaseName", results.title)
-                putExtra("prediction_confidence", "(Prediction Confidence $confidencePer %)")
-//                putExtra("pictureCapture", bitmapData)
+            if (results != null) {
+                val confidencePer = 100* results?.confidence!!
+                val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
+                    putExtra("titleN", "Prediction Result")
+                    putExtra("diseaseName", results.title)
+                    putExtra("prediction_confidence", "(Prediction Confidence $confidencePer %)")
+                //  putExtra("pictureCapture", bitmapData)
+                }
+                Toast.makeText(this, "Predicting started", Toast.LENGTH_SHORT).show()
+                startActivity(intentDetailsActivity)
+            } else{
+                val toast = Toast.makeText(this, "leaf not found", Toast.LENGTH_LONG)
+                toast.setGravity(Gravity.CENTER, 0, 0)
+                toast.show()
             }
-            startActivity(intentDetailsActivity)
         }
+
         fab_help.setOnClickListener(){
             val intent = Intent(this, AboutActivity::class.java).apply {
             }
