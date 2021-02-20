@@ -46,23 +46,23 @@ class MainActivity : AppCompatActivity() {
             leafImageView.setImageBitmap(mBitmap)
         }
         fab_camera.setOnClickListener{
-            Log.d("camera!", "Camera button was clicked!")
+            Log.d("\n camera!", "Camera button was clicked!\n")
             val callCameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(callCameraIntent, mCameraRequestCode)
         }
         fab_gallery.setOnClickListener{
-            Log.d("clicked!", "Gallery button was clicked!")
+            Log.d("\n clicked!", "Gallery button was clicked!\n")
             val callGalleryIntent = Intent(Intent.ACTION_PICK)
             callGalleryIntent.type = "image/*"
             startActivityForResult(callGalleryIntent, mGalleryRequestCode)
         }
         detect_btn.setOnClickListener{
-            Log.d("clicked!", "Detect button was clicked!")
+            Log.d("\n clicked!", "Detect button was clicked!\n")
             val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
 //            predictedTextView.text= "Name: "+results?.title+"\n Confidence: "+confidencePer
 
             val confidencePer = 100* results?.confidence!!
-            Log.d("predicted Result", "Name: " + results.title + "\n Confidence: " + confidencePer + " %")
+            Log.d("predicted Result", "\n Disease Name: " + results.title + "\n Confidence: " + confidencePer + " %")
 
 //            for another activity
 //            Log.d("mBitmap", mBitmap.toString())
@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
             val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
                 putExtra("titleN", "Prediction Result")
                 putExtra("diseaseName", "Disease Name: "+results.title)
-                putExtra("prediction_confidence", "Prediction $confidencePer % Confidence")
+                putExtra("prediction_confidence", "(Prediction Confidence $confidencePer %)")
 //                putExtra("pictureCapture", bitmapData)
             }
             startActivity(intentDetailsActivity)

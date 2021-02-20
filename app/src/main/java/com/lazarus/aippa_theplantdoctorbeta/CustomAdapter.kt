@@ -1,6 +1,7 @@
 package com.lazarus.aippa_theplantdoctorbeta
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,6 +13,8 @@ import org.w3c.dom.Text
 class CustomAdapter(
         private var context: Context,
         private var diseaseNameJSON: ArrayList<String>,
+        private var diseaseNameString: String,
+        private var confPerString: String,
         private var causativeAgentJSON: ArrayList<String>,
         private var causeJSON: ArrayList<String>,
         private var symptoms1JSON: ArrayList<String>,
@@ -36,6 +39,8 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
 
     override fun onBindViewHolder(holder: CustomAdapter.MyViewHolder, position: Int) {
         holder.diseaseNameTV.text = diseaseNameJSON[position]
+        holder.diseaseN.text = diseaseNameString
+        holder.confPer.text = confPerString
         holder.causativeAgentTV.text = causativeAgentJSON[position]
         holder.causeTV.text = causeJSON[position]
 
@@ -56,6 +61,8 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
         holder.itemView.setOnClickListener(){
             Toast.makeText(context, diseaseNameJSON[position], Toast.LENGTH_SHORT).show()
         }
+//        Log.d("percentage", "confirm: $confPer")
+//        Log.d("percentage", "Disease Name: $diseaseNameString")
     }
 
     override fun getItemCount(): Int {
@@ -64,6 +71,8 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var diseaseNameTV: TextView = itemView.findViewById<View>(R.id.tvDiseaseName) as TextView
+        var diseaseN: TextView = itemView.findViewById<View>(R.id.tvDiseaseName) as TextView
+        var confPer: TextView = itemView.findViewById<View>(R.id.tvConfidencePer) as TextView
         var causativeAgentTV: TextView = itemView.findViewById<View>(R.id.tvCausativeAgent) as TextView
         var causeTV: TextView = itemView.findViewById<View>(R.id.tvCause) as TextView
         var symptoms1TV: TextView = itemView.findViewById<View>(R.id.tvSymptoms1) as TextView

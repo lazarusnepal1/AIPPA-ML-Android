@@ -28,6 +28,12 @@
             android:textColor="#000"
             android:textSize="15sp" />
 
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
         <TextView
             android:id="@+id/tvCausativeAgent"
             android:layout_width="match_parent"

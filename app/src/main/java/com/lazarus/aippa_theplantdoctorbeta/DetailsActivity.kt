@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_details.*
+import kotlinx.android.synthetic.main.row.*
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
@@ -15,6 +16,8 @@ class DetailsActivity : AppCompatActivity() {
 
 //    JSON
     private val jsonFileName = "disease_description.json"
+    var confPerStr: String = String()
+    var diseaseNameStr: String = String()
     var diseaseNameJSON: ArrayList<String> = ArrayList()
     var causativeAgentJSON: ArrayList<String> = ArrayList()
     var causeJSON: ArrayList<String> = ArrayList()
@@ -45,11 +48,13 @@ class DetailsActivity : AppCompatActivity() {
         val bundle = intent.extras
         title = bundle?.getString("titleN", "Title") ?: ""
         diseaseName = bundle?.getString("diseaseName", "Disease Name") ?: ""
-        predictionConfidence = bundle?.getString("prediction_confidence", "Prediction Confidence") ?: ""
+        predictionConfidence = bundle?.getString("prediction_confidence", "Unknown %") ?: ""
 //        pictureCapture = bundle?.getByteArray("pictureCapture")!!
 
-        Log.d("(Activity Details :: predicted Result)", "\n Name: $diseaseName \n Confidence: $predictionConfidence")
-//        diseaseNameTV.text = diseaseName
+//        Log.d("(Activity Details :: predicted Result)", "\n Name: $diseaseName \n Confidence: $predictionConfidence")
+//        tvConfidencePer.text = "Name: $diseaseName Confidence: $predictionConfidence"
+        confPerStr = predictionConfidence
+        diseaseNameStr = diseaseName
 //        diseaseNameTV.text = diseaseName
 //        predictConfidenceTV.text = predictionConfidence
 //        imgCaptureIV.setImageBitmap(pictureCapture)
@@ -88,7 +93,7 @@ class DetailsActivity : AppCompatActivity() {
             e.printStackTrace()
         }
         val customAdapter = CustomAdapter(this@DetailsActivity,
-                diseaseNameJSON, causativeAgentJSON, causeJSON, symptoms1JSON,
+                diseaseNameJSON, diseaseNameStr,  confPerStr, causativeAgentJSON, causeJSON, symptoms1JSON,
         symptoms2JSON, symptoms3JSON, symptoms4JSON, symptoms5JSON, comments1JSON, comments2JSON,
         management1JSON, management2JSON, management3JSON, management4JSON)
         recyclerView.adapter = customAdapter
