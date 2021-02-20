@@ -87,6 +87,11 @@ class MainActivity : AppCompatActivity() {
 //            intent.putExtra("darkstatusbar", false)
 //            startActivity(intent)
         }
+        fab_help.setOnClickListener(){
+            val intent = Intent(this, HelpActivity::class.java).apply {
+            }
+            startActivity(intent)
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
