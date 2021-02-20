@@ -15,6 +15,7 @@ import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import java.io.ByteArrayOutputStream
 import java.io.IOException
 
 
@@ -63,12 +64,17 @@ class MainActivity : AppCompatActivity() {
             val confidencePer = 100* results?.confidence!!
             Log.d("predicted Result", "Name: " + results.title + "\n Confidence: " + confidencePer + " %")
 
-//          for another activity
+//            for another activity
+//            Log.d("mBitmap", mBitmap.toString())
+//            mBitmap.compress(Bitmap.CompressFormat.PNG, 0, ByteArrayOutputStream())
+//            val bitmapData = ByteArrayOutputStream().toByteArray()
+//            Log.d("compress bitmap", bitmapData.toString())
+
             val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
                 putExtra("titleN", "Prediction Result")
                 putExtra("diseaseName", "Disease Name: "+results.title)
                 putExtra("prediction_confidence", "Prediction $confidencePer % Confidence")
-//                putExtra("pictureCapture", mBitmap)
+//                putExtra("pictureCapture", bitmapData)
             }
             startActivity(intentDetailsActivity)
 

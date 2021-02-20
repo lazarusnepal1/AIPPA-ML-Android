@@ -9,4 +9,6 @@
     <string name="title_pop">Popup title</string>
     <string name="text_pop">Popup Text</string>
     <string name="know_more">Know More</string>
+    <string name="disease_name">Disease Name</string>
+    <string name="prediction_conf">Prediction Confidence %</string>
 </resources>
