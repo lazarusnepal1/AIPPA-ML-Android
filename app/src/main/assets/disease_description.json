@@ -43,6 +43,798 @@
           "3": "3: Disease can be controlled by applying fungicides from silver tip to harvest.",
           "4": " "
         }
+      },
+    {
+      "name": "Apple Cedar apple rust",
+      "causative_agent": "Gymnosporangium juniperi-virginianae",
+      "symptoms": {
+        "1": "Bright orange or yellow patches on top side of leaves surrounded by a red band and small black spots in the center.",
+        "2": "By mid-summer, cup-like structures called aecia form on the leaf undersides.",
+        "3": "These become covered in tubular structures from which spores are released.",
+        "4": " ",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Fungus requires two hosts to complete lifecycle.",
+        "2": "Forms galls on Eastern red cedar and spores are carried by wind to apple. Use caution when planting apple close to red cedar."
+      },
+      "management": {
+        "1": "Plant resistant varieties where possible.",
+        "2": "Remove nearby red cedar.",
+        "3": "If growing susceptible varieties in proximity to red cedar follow a fungicide program.",
+        "4": " "
       }
+    },
+    {
+      "name": "cherry including sour powdery mildew",
+      "causative_agent": "Podosphaera spp",
+      "symptoms": {
+        "1": "Light colored circular lesions on leaves inside tree canopy which develop a powdery appearance.",
+        "2": "Lesions may coalesce to cover leaf.",
+        "3": "If infection is severe, leaves may blister and infected shoots may be distorted and stunted.",
+        "4": "Infected fruits may have slightly depressed areas on the surface containing fungal hyphae (filamentous fungal structures).",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Infection of fruit is more likely if there are rainfalls close to harvest.",
+        "2": " "
+      },
+      "management": {
+        "1": "Management of powdery mildew in cherry is reliant on the application of appropriate fungicides and cultural practices which promote good air circulation around tree canopies to lower humidity.",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "corn maize cercospora leaf spot gray leaf spot",
+      "causative_agent": "Cercospora zeae-maydis",
+      "symptoms": {
+        "1": "Small necrotic spots with chlorotic halos on leaves which expand to rectangular lesions 1-6 cm in length and 2-4 mm wide.",
+        "2": "As the lesions mature they turn tan in color and finally gray.",
+        "3": "Lesions have sharp, parallel edges and are opaque.",
+        "4": "Disease can develop quickly causing complete blighting of leaves and plant death.",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Disease emergence is favored in areas where a corn crop is followed by more corn with no rotastion. Prolonged periods of foggy or cloudy weather can cause severe Cercopora epidemics.",
+        "2": "Severity and incidence of disease is likely die to continuous corn culture with minimum tillage and the use of susceptible hybrids in in the midwestern corn belt of the USA."
+      },
+      "management": {
+        "1": "Plant corn hybrids with resistance to the disease.",
+        "2": "Crop rotation and plowing debris into soil may reduce levels of inoculum in the soil but may not provide control in areas where the disease is prevalent.",
+        "3": "Foliar fungicides may be economically viable for some high yeilding susceptible hybrids.",
+        "4": " "
+      }
+    },
+    {
+      "name": "corn maize common rust ",
+      "causative_agent": "Puccinia sorghi",
+      "symptoms": {
+        "1": "Oval or elongated cinnamon brown pustules on upper and lower surfaces of leaves.",
+        "2": "Pustules rupture and release powdery red spores.",
+        "3": "Pustules turn dark brown-black as they mature and release dark brown powdery spores.",
+        "4": "If infection is severe, pustules may appear on tassels and ears and leaves may begin to yellow.",
+        "5": "In partially resistant corn hybrids, symptoms appear as chlorotic or necrotic flecks on the leaves which release little or no spore."
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Disease is spread by wind-borne spores.",
+        "2": "Some of the most popularly grown sweet corn varieties have little or no resistance to the disease."
+      },
+      "management": {
+        "1": "The most effective method of controlling the disease is to plant resistant hybrids.",
+        "2": "Application of appropriate fungicides may provide some degree on control and reduce disease severity.",
+        "3": "Fungicides are most effective when the amount of secondary inoculum is still low, generally when plants only have a few rust pustules per leaf.",
+        "4": " "
+      }
+    },
+    {
+      "name": "corn maize northern leaf blight",
+      "causative_agent": "Exserohilum turcicum",
+      "symptoms": {
+        "1": "In the beginning we will notice elliptical gray-green lesions on leaves. As the disease process this lesions become pale gray to tan color.",
+        "2": "Later stage the lesions looks dirty due to dark gray spores particularly under lower leaf surface.",
+        "3": "The disease can be easily identified in the field due to its long, narrow lesions which are unrestricted by veins.",
+        "4": " ",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "The disease mainly spread through rain splash and wind.",
+        "2": " "
+      },
+      "management": {
+        "1": "Follow proper tillage to reduce fungus inoculum from crop debris.",
+        "2": "Follow crop rotation with non host crop.",
+        "3": "Grow available resistant varieties.",
+        "4": "In severe case of disease incidence apply suitable fungicide."
+      }
+    },
+    {
+      "name": "grape black rot",
+      "causative_agent": "Guignardia bidwellii",
+      "symptoms": {
+        "1": "Brown lesions on the leaves that develop black dots (pycnidia).",
+        "2": "Grapes have light spots that eventually form pycnidia.",
+        "3": "Grapes harden and turn black, while still remaining on the vine.",
+        "4": " ",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Disease favors rainy weather; spores may ooze out during rain.",
+        "2": " "
+      },
+      "management": {
+        "1": "Remove all mummified fruit from vines during dormant pruning.",
+        "2": "Cultivate soil during bud break to bury mummies and reduce inoculant.",
+        "3": "Application of appropriate fungicides can help control the disease.",
+        "4": " "
+      }
+    },
+    {
+      "name": "grape esca black measles",
+      "causative_agent": "Phaeomoniella aleophilum, Phaeomoniella chlamydospora",
+      "symptoms": {
+        "1": "Symptom appears on leaves, trunk, canes and berries. On leaves we will see intervenaial striping looks like tiger strips.",
+        "2": "White cultivars shows chlorotic and necrotic strips where as red cultivars shows red areas and necrotic strips.",
+        "3": "On berries we will see superficial spots and later may coalesce making berries appear black.",
+        "4": "Trunk/arm/cordons shows dark brown black vascular streaking and oozes dark sap when we cut trunk.",
+        "5": "Some time this measles in associate with numerous secondary wood rotting fungi which decorate the vineyard completely."
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "The leaf and berry symptoms may occur together in single cane or may show symptom on only one parts. The symptoms are common in 5 to 7 year old vineyard.",
+        "2": "The severe infestation of measles kill grapevine in a single year which is commonly called apoplexy. The prune wounds helps in pathogen entrance and establishment."
+      },
+      "management": {
+        "1": "Till date there is no effective method to control this disease.",
+        "2": "Remove the infected berries, leaves and trunk and destroy them.",
+        "3": "Protect the prune wounds to minimize fungal infection using wound sealant (5% boric acid in acrylic paint) or essential oil or suitable fungicides.",
+        "4": " "
+      }
+    },
+    {
+      "name": "grape leaf blight isariopsis leaf spot ",
+      "causative_agent": "Pseudocercospora vitis",
+      "symptoms": {
+        "1": "On leaf surface we will see lesions which are irregularly shaped (2 to 25 mm in diameter).",
+        "2": "Initially lesions are dull red to brown in color turn black later.",
+        "3": "If disease is severe this lesions may coalesce.",
+        "4": "On berries we can see symptom similar to black rot but the entire clusters will collapse.",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Common in tropical and subtropical grapes.",
+        "2": "The disease appear late in the season. Cynthiana and Cabernet Sauvignon are susceptible to this pathogen."
+      },
+      "management": {
+        "1": "Fungicides sprayed for other diseases in the season may help to reduce this disease.",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "orange haunglongbing citrus greening",
+      "causative_agent": "Candidatus Liberibacter asiativus, Candidatus Liberibacter africanus, Candidatus Liberibacter americanus",
+      "symptoms": {
+        "1": "Yellowing of one limb or one area of canopy. Yellowing of leaf veins.",
+        "2": "Blotchy mottling on leaf blades.Twig and limb dieback.",
+        "3": "Fruits dropping prematurely. Small upwardly pointing leaves.",
+        "4": "Small, misshapen fruit.",
+        "5": "Fruit very bitter."
+      },
+      "cause": "Bacteria",
+      "comments": {
+        "1": "Asiatic form of the bacteria found in Florida.",
+        "2": "Transmitted by Asian citrus psyllid."
+      },
+      "management": {
+        "1": "Regulating planting material is necessary for the control of the disease.",
+        "2": "In areas where disease is endemic, control strategies should focus on populations of the insect vectors, reducing inoculum and planting trees in conditions unfavourable to the spread of the pathogen.",
+        "3": "Heat treatment of budwood can treat the disease.",
+        "4": " "
+      }
+    },
+    {
+      "name": "peach bacterial spot",
+      "causative_agent": "Xanthomonas campestris",
+      "symptoms": {
+        "1": "Water soaked, angular gray lesions on the underside of the leaves which turn purple and necrotic in the center and cause a shot hole appearance if lesion center drops out.",
+        "2": "If lesions are present in high numbers on leaves they may become chlorotic and drop from tree.",
+        "3": "Cankers develop on twigs either as raised blisters or as a dark area surrounding a bud that fails to open.",
+        "4": "In years of severe infection the entire fruit crop may be lost.",
+        "5": "Lesions on fruit begin as small brown, water-soaked lesions which may exude gum."
+      },
+      "cause": "Bacterium",
+      "comments": {
+        "1": "Periods of frequent rainfall during late bloom and early petal drop increase likelihood of fruit and leaf infection.",
+        "2": "Infection is rare during hot, dry weather."
+      },
+      "management": {
+        "1": "Avoid planting susceptible peach varieties in areas where disease is known.",
+        "2": "Once disease is visible it can be difficult to control, protective copper applications in the Fall prior to leaf drop and/or application in early growing season may help prevent the disease.",
+        "3": "Care should be taken as peach trees are very sensitive to copper.",
+        "4": " "
+      }
+    },
+    {
+      "name": "pepper bell bacterial spot",
+      "causative_agent": "Xanthomonas campestris, Xanthomonas euvesicatoria, Xanthomonas perforans, Xanthomonas vesicatoria, Xanthomonas gardneri",
+      "symptoms": {
+        "1": "Water-soaked lesions that dry out and turn brown forming on the underside of the leaves.",
+        "2": "Raised brown cankers on stems.",
+        "3": "Cracked brown lesions on fruit.",
+        "4": " ",
+        "5": " "
+      },
+      "cause": "Bacterium",
+      "comments": {
+        "1": "Disease emergence favored by warm, wet conditions.",
+        "2": "The pathogen can be enter a field on seed and transplants and can be spread within a field by wind-driven rain, clipping plants and aerosols."
+      },
+      "management": {
+        "1": "Use disease free planting material.",
+        "2": "Remove and destroy all crop debris after harvest, or plow material deeply under soil.",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "potato early blight",
+      "causative_agent": "Alternaria solani",
+      "symptoms": {
+        "1": "Dark lesions with yellow border which may form concentric rings of raised and sunken tissue on the leaves and stems.",
+        "2": "Lesions initially circular but become angular.",
+        "3": "Leaves become necrotic but remain attached to plant.",
+        "4": "Dark, dry lesions on tubers with leathery or corky texture and watery yellow green margins.",
+        "5": ""
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Disease emergence favors cycles of wet and dry conditions with periods of high humidity and leaf wetness.",
+        "2": " "
+      },
+      "management": {
+        "1": "Application of appropriate protective fungicide can reduce severity of foliar symptoms.",
+        "2": "Reduce stress to plants by fertilizing and watering adequately.",
+        "3": "Plant late varieties which are less susceptible to disease",
+        "4": "Store tubers in cool environment."
+      }
+    },
+    {
+      "name": "potato late blight",
+      "causative_agent": "Phytophthora infestans",
+      "symptoms": {
+        "1": "Irregularly shaped spreading brown lesions on leaves with distinctive white fluffy sporulation at lesion margins on the underside of the leaf in wet conditions. In dry condition the lesions dry up and go dark brown with collapsed tissue.",
+        "2": "Water-soaked dark green to brown lesions on stems also with characteristic white sporulation.",
+        "3": "Later in infection leaves and petioles completely rotted. Severely affected plants may have an slightly sweet distinctive odor.",
+        "4": "lesions may be slightly sunken in appearance and often lead to secondary bacterial rots.",
+        "5": "Red-brown firm lesions on tubers extending several centimeters into tissue."
+      },
+      "cause": "Oomycete",
+      "comments": {
+        "1": "The pathogen can survive for several months to years in the soil.",
+        "2": "Emergence of disease favored by moist, cool conditions. Major cause of disease spread is infected tubers"
+      },
+      "management": {
+        "1": "Control depends on a multifaceted approach with importance of certain practices changing based on geographic location.",
+        "2": "Destroy infected tubers. Destroy any volunteer plants. plant resistant varieties",
+        "3": "Application of appropriate fungicide to potato hills at emergence. Apply appropriate protective fungicide if disease is forecast in area.",
+        "4": "Time watering to reduce periods of leaf wetness e.g. water early to allow plant to dry off during the day."
+      }
+    },
+    {
+      "name": "squash powdery mildew",
+      "causative_agent": "Erysiphe cichoracearum, Sphaerotheca fuliginea, Podosphaera xanthii",
+      "symptoms": {
+        "1": "White powdery growth on the upper surfaces of leaves and stems.",
+        "2": "Infected areas stunted and distorted.",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": "Fungi",
+      "comments": {
+        "1": "Disease emergence favored by dry weather and high relative humidity.",
+        "2": " "
+      },
+      "management": {
+        "1": "Plant in sites with good air circulation and sun exposure.",
+        "2": "Do not overcrowd plants.",
+        "3": "sanitize equipment regularly.",
+        "4": " "
+      }
+    },
+    {
+      "name": "strawberry leaf scorch",
+      "causative_agent": "Erysiphe cichoracearum, Sphaerotheca fuliginea, Podosphaera xanthii",
+      "symptoms": {
+        "1": "Irregular dark purple or brown blotches on upper leaf surface which may colaesce to produce large purplish brown patches.",
+        "2": "Tissue between blotches may turn purple or red.",
+        "3": "Lesions may also develop on flowers and fruits",
+        "4": "Affected petals may wither and drop from plant",
+        "5": "Lesions may girdle peduncles causing death of fruit."
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Disease emergence favored by wet foliage for extended periods of time.",
+        "2": " "
+      },
+      "management": {
+        "1": "Plant resistant varieties. Regular renewal of plants.",
+        "2": "Application of appropriate foliar fungicide may be required to provide control.",
+        "3": "Plant in an area with good air circulation and drainage in full sun.",
+        "4": "Remove all foliage from plants at harvest."
+      }
+    },
+    {
+      "name": "tomato bacterial spot",
+      "causative_agent": "Xanthomonas campestris, Xanthomonas euvesicatoria, Xanthomonas perforans, Xanthomonas vesicatoria, Xanthomonas gardneri",
+      "symptoms": {
+        "1": "Bacterial spot lesions starts out as small water-soaked spots.",
+        "2": "Lesions become more numerous and coalesce to form necrotic areas on the leaves giving them a blighted appearance.",
+        "3": "Of leaves drop from the plant severe defoliation can occur leaving the fruit susceptible to sunscald.",
+        "4": "Mature spots have a greasy appearance and may appear transparent when held up to light.",
+        "5": "Centers of lesions dry up and fall out of the leaf. blighted leaves often remain attached to the plant and give it a blighted appearance."
+      },
+      "cause": "Bacterium",
+      "comments": {
+        "1": "Bacteria survive on crop debris. Disease emergence favored by warm temperatures and wet weather. Symptoms are very similar to other tomato diseases but only bacterial spot will cause a cut leaf to ooze bacterial exudate.",
+        "2": "The disease is spread by infected seed, wind-driven rain, diseased transplants, or infested soil. Bacteria enter the plant through any natural openings on the leaves or any openings caused by injury to the leaves."
+      },
+      "management": {
+        "1": "Use only certified seed and healthy transplants.",
+        "2": "Remove all crop debris from planting area.",
+        "3": "Do not use sprinkler irrigation, instead water from base of plant.",
+        "4": "rotate crops."
+      }
+    },
+    {
+      "name": "tomato Early blight",
+      "causative_agent": "Alternaria solani",
+      "symptoms": {
+        "1": "Early blight symptoms start as oval shaped lesions with a yellow chlorotic region across the lesion.",
+        "2": "Concentric leaf lesions may be seen on infected leaves.",
+        "3": "Leaf tissue between veins is destroyed. Severe infections can cause leaves to completely collapse.",
+        "4": "Tomato stems may become infected with the fungus leading to Alternaria stem canker.",
+        "5": "As the disease progresses leaves become severely blighted leading to reduced yield."
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Disease can spread rapidly after plants have set fruit.",
+        "2": "Movement of air-borne spores and contact with infested soil are causes for the spread of the disease."
+      },
+      "management": {
+        "1": "Apply appropriate fungicide at first sign of disease.",
+        "2": "Destroy any volunteer solanaceous plants (tomato, potato, nightshade etc).",
+        "3": "Practice crop rotation.",
+        "4": " "
+      }
+    },
+    {
+      "name": "tomato late blight",
+      "causative_agent": "Phytophthora infestans",
+      "symptoms": {
+        "1": "Late blight affects all aerial parts of the tomato plant.",
+        "2": "Initial symptoms of the disease appear as water-soaked green to black areas on leaves which rapidly change to brown lesions.",
+        "3": "Fluffy white fungal growth may appear on infected areas and leaf undersides during wet weather.",
+        "4": "As the disease progresses, foliage becomes becomes shriveled and brown and the entire plant may die.",
+        "5": "Fruit lesions start as irregularly shaped water soaked regions and change to greasy spots. Entire fruit may become infected and a white fuzzy growth may appear during wet weather."
+      },
+      "cause": "Oomycete",
+      "comments": {
+        "1": "Can devastate tomato plantings.",
+        "2": " "
+      },
+      "management": {
+        "1": "Plant resistant varieties.",
+        "2": "If signs of disease are present or if rainy conditions are likely or if using overhead irrigation appropriate fungicides should be applied.",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "tomato leaf mold",
+      "causative_agent": "Passalora fulva",
+      "symptoms": {
+        "1": "The older leaves exhibit pale greenish to yellow spots (without distinguishable margins) on upper surface.",
+        "2": "Whereas the lower portion of this spots exhibit green to brown velvety fungal growth.",
+        "3": "As the disease progress the spots may coalesce and appear brown.",
+        "4": "The infected leaves become wither and die but stay attached to the plant.",
+        "5": "The fungus also infects flowers and fruits. The affected flowers become black and drop off."
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "The disease is favored by high relative humidity.",
+        "2": "Also a common disease in green house tomato crop."
+      },
+      "management": {
+        "1": "Grow available resistant varieties.",
+        "2": "Avoid leaf wetting and overhead application of water.",
+        "3": "Follow proper spacing to provide good air circulation around the plants.",
+        "4": "Remove the infected plant debris and burn them. If the disease is severe scary suitable fungicide."
+      }
+    },
+    {
+      "name": "tomato septoria leaf spot",
+      "causative_agent": "Septoria lycopersici",
+      "symptoms": {
+        "1": "Symptoms may occur at any stage of tomato development and begin as small, water-soaked spots or circular grayish-white spots on the underside of older leaves.",
+        "2": "Spots have a grayish center and a dark margin and they may colasece.",
+        "3": "Fungal fruiting bodies are visible as tiny black specks in the center of spot.",
+        "4": "Spots may also appear on stems, fruit calyxes, and flowers.",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "Spread by water splash.",
+        "2": "Fungus overwinters in plant debris."
+      },
+      "management": {
+        "1": "Ensure all tomato crop debris is removed and destroyed in Fall or plowed deep into soil.",
+        "2": "Plant only disease-free material.",
+        "3": "Avoid overhead irrigation.",
+        "4": "Stake plants to increase air circulation through the foliage. Apply appropriate fungicide if necessary."
+      }
+    },
+    {
+      "name": "tomato spider mites two spotted spider mite",
+      "causative_agent": "Tetranychus urticae",
+      "symptoms": {
+        "1": "Leaves stippled with yellow.",
+        "2": "Leaves may appear bronzed.",
+        "3": "Webbing covering leaves.",
+        "4": "Mites may be visible as tiny moving dots on the webs or underside of leaves, best viewed using a hand lens.",
+        "5": "Usually not spotted until there are visible symptoms on the plant. Leaves turn yellow and may drop from plant."
+      },
+      "cause": "Arachnid",
+      "comments": {
+        "1": "Spider mites thrive in dusty conditions.",
+        "2": "Water-stressed plants are more susceptible to attack."
+      },
+      "management": {
+        "1": "In the home garden, spraying plants with a strong jet of water can help reduce buildup of spider mite populations.",
+        "2": "If mites become problematic apply insecticidal soap to plants.",
+        "3": "Certain chemical insecticides may actually increase mite populations by killing off natural enemies and promoting mite reproduction.",
+        "4": " "
+      }
+    },
+    {
+      "name": "tomato target spot",
+      "causative_agent": "Corynespora cassiicola",
+      "symptoms": {
+        "1": "The fungus infects all parts of plant.",
+        "2": "Infected leaves shows small, pinpoint, water soaked spots initially.",
+        "3": "As the disease progress the spots enlarge to become necrotic lesions with conspicuous concentric circles, dark margins and light brown centers.",
+        "4": "Whereas the fruits exhibit brown, slightly sunken flecks in the beginning but later the lesions become large pitted appearance.",
+        "5": " "
+      },
+      "cause": "Fungus",
+      "comments": {
+        "1": "The pathogen infects cucumber, pawpaw , ornamental plants, some weed species etc.",
+        "2": "The damaged fruits are susceptible for this disease."
+      },
+      "management": {
+        "1": "Remove the plant debris and burn them.",
+        "2": "Avoid over application of nitrogen fertilizer.",
+        "3": "If the disease is severe spray suitable fungicides.",
+        "4": " "
+      }
+    },
+    {
+      "name": "tomato tomato yellow leaf curl virus",
+      "causative_agent": "Corynespora cassiicola",
+      "symptoms": {
+        "1": "The infected leaves become reduced in size, curl upward, appear crumpled and show yellowing of veins and leaf margins.",
+        "2": "The internodes become shorter and whole plant appear stunted and bushy.",
+        "3": "The whole plant stand erect with only upright growth.",
+        "4": "The flowers may not develop and drop off.",
+        "5": " "
+      },
+      "cause": "Virus",
+      "comments": {
+        "1": "The virus is transmitted by white flies and may cause 100 % yield loss if the plants infect at early stage of crop.",
+        "2": "The virus also infect other hosts like common bean, ornamental plants and several weed species."
+      },
+      "management": {
+        "1": "Grow available resistant varieties. Transplant only disease and whiteflies free seedlings.",
+        "2": "Remove the infected plants and burn them. Keep the field free from weeds.",
+        "3": "Use yellow sticky traps to monitor and control whiteflies.",
+        "4": "If the insect infestation is severe spray suitable insecticides."
+      }
+    },
+    {
+      "name": "tomato tomato mosaic virus",
+      "causative_agent": "Tomato mosaic virus (ToMV)",
+      "symptoms": {
+        "1": "Symptoms can occur at any growth stage and any part of the plant can be affected.",
+        "2": "Infected leaves generally exhibit a dark green mottling or mosaic.",
+        "3": "Some strains of the virus can cause yellow mottling on the leaves may be stunted or distorted.",
+        "4": "Severely infected leaves may have raised green areas. Fruit yields are reduced in infected plants.",
+        "5": "Green fruit may have yellow blotches or necrotic spots. Dark necrotic streaks may appear on the stems, petioles leaves and fruit."
+      },
+      "cause": "Virus",
+      "comments": {
+        "1": "ToMV is a closely related strain of Tobacco mosaic virus (TMV), it enters fields via infected weeds, peppers or potato plants.",
+        "2": "The virus may also be transmitted to tomato fields by grasshoppers, small mammals and birds."
+      },
+      "management": {
+        "1": "Plant varieties that are resistant to the virus. If the virus is confirmed in the field, infected plants should be removed and destroyed to limit further spread.",
+        "2": "Heat treating seeds at 70°C (158°F) for 4 days or at 82–85°C (179.6–185°F) for 24 hours will help to eliminate any virus particles on the surface of the seeds.",
+        "3": "Soaking seed for 15 min in 100 g/l of tri-sodium phosphate solution (TSP) can also eliminate virus particles - seeds should be rinsed thoroughly and laid out to dry after this treatment.",
+        "4": "Plant tomato on a 2-year rotation, avoiding susceptible crops such as peppers, eggplant, cucurbits and tobacco. Disinfect all equipment when moving from infected areas of the field."
+      }
+    },
+    {
+      "name": "tomato healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "corn maize healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "pepper bell healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Grape healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Potato healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Raspberry healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Soybean healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Strawberry healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Peach healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Apple healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "Blueberry healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    },
+    {
+      "name": "cherry including sour healthy",
+      "causative_agent": " ",
+      "symptoms": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " ",
+        "5": " "
+      },
+      "cause": " ",
+      "comments": {
+        "1": " ",
+        "2": " "
+      },
+      "management": {
+        "1": " ",
+        "2": " ",
+        "3": " ",
+        "4": " "
+      }
+    }
   ]
 }
