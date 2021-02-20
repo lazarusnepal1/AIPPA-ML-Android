@@ -1,7 +1,7 @@
 {
   "disease": [
     {
-      "name": "Apple___Apple_scab",
+      "name": "apple apple scab",
       "causative_agent": "Causative Agent: Venturia inaequalis",
       "symptoms": {
         "1": "1: Yellow or chlorotic spots on leaves.",
@@ -23,7 +23,7 @@
       }
     },
     {
-        "name": "Apple___Black_rot",
+        "name": "apple black rot",
         "causative_agent": "Causative Agent: Botryosphaeria obtusa",
         "symptoms": {
           "1": "1: Purple flecks or circular lesions which are brown in the centre and purple at margin.",

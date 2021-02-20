@@ -57,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(callGalleryIntent, mGalleryRequestCode)
         }
         detect_btn.setOnClickListener{
+            Toast.makeText(this, "Predicting started", Toast.LENGTH_LONG).show()
             Log.d("\n clicked!", "Detect button was clicked!\n")
             val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
 //            predictedTextView.text= "Name: "+results?.title+"\n Confidence: "+confidencePer
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity() {
 
             val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
                 putExtra("titleN", "Prediction Result")
-                putExtra("diseaseName", "Disease Name: "+results.title)
+                putExtra("diseaseName", results.title)
                 putExtra("prediction_confidence", "(Prediction Confidence $confidencePer %)")
 //                putExtra("pictureCapture", bitmapData)
             }

@@ -1,12 +1,14 @@
 package com.lazarus.aippa_theplantdoctorbeta
 
 import android.content.Context
+import android.content.Intent
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import org.w3c.dom.Text
 
@@ -38,31 +40,37 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
     }
 
     override fun onBindViewHolder(holder: CustomAdapter.MyViewHolder, position: Int) {
-        holder.diseaseNameTV.text = diseaseNameJSON[position]
-        holder.diseaseN.text = diseaseNameString
-        holder.confPer.text = confPerString
-        holder.causativeAgentTV.text = causativeAgentJSON[position]
-        holder.causeTV.text = causeJSON[position]
+        Log.d("if condition:", "\n prediction: $diseaseNameString \n JSON:" +diseaseNameJSON[position])
+        if (diseaseNameString==diseaseNameJSON[position]){
+//            holder.diseaseNameTV.text = diseaseNameJSON[position]
+            holder.diseaseN.text = diseaseNameString
+            holder.confPer.text = confPerString
+            holder.causativeAgentTV.text = causativeAgentJSON[position]
+            holder.causeTV.text = causeJSON[position]
 
-        holder.symptoms1TV.text = symptoms1JSON[position]
-        holder.symptoms2TV.text = symptoms2JSON[position]
-        holder.symptoms3TV.text = symptoms3JSON[position]
-        holder.symptoms4TV.text = symptoms4JSON[position]
-        holder.symptoms5TV.text = symptoms5JSON[position]
+            holder.symptoms1TV.text = symptoms1JSON[position]
+            holder.symptoms2TV.text = symptoms2JSON[position]
+            holder.symptoms3TV.text = symptoms3JSON[position]
+            holder.symptoms4TV.text = symptoms4JSON[position]
+            holder.symptoms5TV.text = symptoms5JSON[position]
 
-        holder.comments1TV.text = comments1JSON[position]
-        holder.comments2TV.text = comments2JSON[position]
+            holder.comments1TV.text = comments1JSON[position]
+            holder.comments2TV.text = comments2JSON[position]
 
-        holder.management1TV.text = management1JSON[position]
-        holder.management2TV.text = management2JSON[position]
-        holder.management3TV.text = management3JSON[position]
-        holder.management4TV.text = management4JSON[position]
+            holder.management1TV.text = management1JSON[position]
+            holder.management2TV.text = management2JSON[position]
+            holder.management3TV.text = management3JSON[position]
+            holder.management4TV.text = management4JSON[position]
 
-        holder.itemView.setOnClickListener(){
-            Toast.makeText(context, diseaseNameJSON[position], Toast.LENGTH_SHORT).show()
+            holder.itemView.setOnClickListener(){
+                Toast.makeText(context, diseaseNameJSON[position], Toast.LENGTH_SHORT).show()
+            }
+        } else{
+            holder?.itemView.visibility = View.GONE
+//            holder.diseaseN.text = "Plant can't recognize"
+            Toast.makeText(context, "Plant or disease not recognize", Toast.LENGTH_LONG).show()
+            (context as DetailsActivity).goHome()
         }
-//        Log.d("percentage", "confirm: $confPer")
-//        Log.d("percentage", "Disease Name: $diseaseNameString")
     }
 
     override fun getItemCount(): Int {

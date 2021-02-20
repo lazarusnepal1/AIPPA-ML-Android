@@ -1,8 +1,10 @@
 package com.lazarus.aippa_theplantdoctorbeta
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_details.*
@@ -113,5 +115,17 @@ class DetailsActivity : AppCompatActivity() {
             return ""
         }
         return json
+    }
+
+//    fun goHome(view: View) {
+//        val intent = Intent(this, MainActivity::class.java).apply {
+//        }
+//        startActivity(intent)
+//    }
+
+    fun goHome() {
+        val intent = Intent(this, MainActivity::class.java).apply {
+        }
+        startActivity(intent)
     }
 }
