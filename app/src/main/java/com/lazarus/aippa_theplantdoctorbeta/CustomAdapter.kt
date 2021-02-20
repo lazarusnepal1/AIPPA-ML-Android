@@ -41,8 +41,8 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
 
     override fun onBindViewHolder(holder: CustomAdapter.MyViewHolder, position: Int) {
         Log.d("if condition:", "\n prediction: $diseaseNameString \n JSON:" +diseaseNameJSON[position])
-        if (diseaseNameString==diseaseNameJSON[position]){
-//            holder.diseaseNameTV.text = diseaseNameJSON[position]
+
+            holder.diseaseNameTV.text = diseaseNameJSON[position]
             holder.diseaseN.text = diseaseNameString
             holder.confPer.text = confPerString
             holder.causativeAgentTV.text = causativeAgentJSON[position]
@@ -65,12 +65,6 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
             holder.itemView.setOnClickListener(){
                 Toast.makeText(context, diseaseNameJSON[position], Toast.LENGTH_SHORT).show()
             }
-        } else{
-            holder?.itemView.visibility = View.GONE
-//            holder.diseaseN.text = "Plant can't recognize"
-            Toast.makeText(context, "Plant or disease not recognize", Toast.LENGTH_LONG).show()
-            (context as DetailsActivity).goHome()
-        }
     }
 
     override fun getItemCount(): Int {

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_details.*
@@ -70,26 +71,29 @@ class DetailsActivity : AppCompatActivity() {
             val diseaseArray = obj.getJSONArray("disease")
             for (i in 0 until diseaseArray.length()){
                 val diseaseDetail = diseaseArray.getJSONObject(i)
-                diseaseNameJSON.add(diseaseDetail.getString("name"))
-                causativeAgentJSON.add(diseaseDetail.getString("causative_agent"))
-                causeJSON.add(diseaseDetail.getString("cause"))
+                if(diseaseDetail.getString("name")==diseaseNameStr){
+                    diseaseNameJSON.add(diseaseDetail.getString("name"))
+                    causativeAgentJSON.add(diseaseDetail.getString("causative_agent"))
+                    causeJSON.add(diseaseDetail.getString("cause"))
 
-                val symptomsDetails = diseaseDetail.getJSONObject("symptoms")
-                symptoms1JSON.add(symptomsDetails.getString("1"))
-                symptoms2JSON.add(symptomsDetails.getString("2"))
-                symptoms3JSON.add(symptomsDetails.getString("3"))
-                symptoms4JSON.add(symptomsDetails.getString("3"))
-                symptoms5JSON.add(symptomsDetails.getString("5"))
+                    val symptomsDetails = diseaseDetail.getJSONObject("symptoms")
+                    symptoms1JSON.add(symptomsDetails.getString("1"))
+                    symptoms2JSON.add(symptomsDetails.getString("2"))
+                    symptoms3JSON.add(symptomsDetails.getString("3"))
+                    symptoms4JSON.add(symptomsDetails.getString("3"))
+                    symptoms5JSON.add(symptomsDetails.getString("5"))
 
-                val commentsDetails = diseaseDetail.getJSONObject("comments")
-                comments1JSON.add(commentsDetails.getString("1"))
-                comments2JSON.add(commentsDetails.getString("2"))
+                    val commentsDetails = diseaseDetail.getJSONObject("comments")
+                    comments1JSON.add(commentsDetails.getString("1"))
+                    comments2JSON.add(commentsDetails.getString("2"))
 
-                val managementDetails = diseaseDetail.getJSONObject("management")
-                management1JSON.add(managementDetails.getString("1"))
-                management2JSON.add(managementDetails.getString("2"))
-                management3JSON.add(managementDetails.getString("3"))
-                management4JSON.add(managementDetails.getString("4"))
+                    val managementDetails = diseaseDetail.getJSONObject("management")
+                    management1JSON.add(managementDetails.getString("1"))
+                    management2JSON.add(managementDetails.getString("2"))
+                    management3JSON.add(managementDetails.getString("3"))
+                    management4JSON.add(managementDetails.getString("4"))
+                    break
+                }
             }
         } catch (e: JSONException){
             e.printStackTrace()
