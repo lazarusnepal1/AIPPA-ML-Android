@@ -1,156 +1,48 @@
 {
   "disease": [
     {
-      "Apple___Apple_scab": {
-        "name": "Apple___Apple_scab",
-        "causative_agent": "Venturia inaequalis",
-        "symptoms": {
-          "1": "Yellow or chlorotic spots on leaves.",
-          "2": "Dark olive green spots on leaves and fruit.",
-          "3": "May be a velvety growth on spots on undersides of leaves.",
-          "4": "Twisting of leaves.",
-          "5": "Distorted leaves.",
-          "6": "Severely infected leaves turn yellow and drop from tree."
-        },
-        "cause": "Fungus",
-        "comments": {
-          "1": "Fungus overwinters on dead foliage on ground.",
-          "2": "spores dispersed by wind; high moisture encourages fungal growth."
-        },
-        "management": {
-          "1": "Remove all leaves dropped from tree in the fall and compost to prevent any diseases surviving in debris.",
-          "2": "Application of zinc and fertilizer grade urea in the Fall may be necessary to speed leaf drop, lime should then be added to fallen leaves.",
-          "3": "Fungicide application may be necessary in areas where leaves remain wet for periods in excess of 9 hours.",
-          "4": "Fungicides such as copper soaps and Bordeaux mixture should be applied if there is a chance of wet period as soon as leaf tips emerge."
-        }
+      "name": "Apple___Apple_scab",
+      "causative_agent": "Causative Agent: Venturia inaequalis",
+      "symptoms": {
+        "1": "1: Yellow or chlorotic spots on leaves.",
+        "2": "2: May be a velvety growth on spots on undersides of leaves.",
+        "3": "3: Twisting of leaves and Distorted leaves.",
+        "4": "4: Dark olive green spots on leaves and fruit.",
+        "5": "5: Severely infected leaves turn yellow and drop from tree."
       },
-      "Apple___Black_rot": {
-        "name": "Apple___Black_rot",
-        "causative_agent": "Botryosphaeria obtusa",
-        "symptoms": {
-          "1": "Purple flecks or circular lesions which are brown in the centre and purple at margin.",
-          "2": "Red flecks, purple lesions and/or brown black rings on fruit."
-        },
-        "cause": "Fungus",
-        "comments": {
-          "1": "Spores can overwinter in twigs or fruit remaining on the tree and spread during rainfall."
-        },
-        "management": {
-          "1": "Remove dead wood, mummified fruit and cankers from trees to reduce spread of disease.",
-          "2": "Burn any prunings that have been made from the tree.",
-          "3": "Disease can be controlled by applying fungicides from silver tip to harvest."
-        }
+      "cause": "Cause: Fungus",
+      "comments": {
+        "1": "1: Fungus overwinters on dead foliage on ground.",
+        "2": "2: spores dispersed by wind; high moisture encourages fungal growth."
       },
-      "Apple___Cedar_apple_rust": {
-        "name": "Apple___Cedar_apple_rust",
-        "causative_agent": "Gymnosporangium juniperi-virginianae",
-        "symptoms": {
-          "1": "Bright orange or yellow patches on top side of leaves surrounded by a red band and small black spots in the center.",
-          "2": "By mid-summer, cup-like structures called aecia form on the leaf undersides.",
-          "3": "These become covered in tubular structures from which spores are released."
-        },
-        "cause": "Fungus",
-        "comments": {
-          "1": "Fungus requires two hosts to complete lifecycle.",
-          "2": "Forms galls on Eastern red cedar and spores are carried by wind to apple.",
-          "3": "Use caution when planting apple close to red cedar."
-        },
-        "management": {
-          "1": "Plant resistant varieties where possible.",
-          "2": "Remove nearby red cedar.",
-          "3": "If growing susceptible varieties in proximity to red cedar follow a fungicide program."
-        }
-      },
-      "Apple___healthy": {
-        "name": "Apple___healthy"
-      },
-      "Blueberry___healthy": {
-        "name": "Blueberry___healthy"
-      },
-      "Cherry_(including_sour)___Powdery_mildew": {
-        "name": "Cherry_(including_sour)___Powdery_mildew",
-        "causative_agent": "Podosphaera spp",
-        "symptoms": {
-          "1": "Light colored circular lesions on leaves inside tree canopy which develop a powdery appearance.",
-          "2": "Lesions may coalesce to cover leaf.",
-          "3": "If infection is severe, leaves may blister and infected shoots may be distorted and stunted.",
-          "4": "Infected fruits may have slightly depressed areas on the surface containing fungal hyphae (filamentous fungal structures)."
-        },
-        "cause": "Fungus",
-        "comments": {
-          "1": "Infection of fruit is more likely if there are rainfalls close to harvest."
-        },
-        "management": {
-          "1": "Management of powdery mildew in cherry is reliant on the application of appropriate fungicides and cultural practices which promote good air circulation around tree canopies to lower humidity."
-        }
-      },
-      "Cherry_(including_sour)___healthy": {
-        "name": "Cherry_(including_sour)___healthy"
-      },
-      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
-        "name": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
-        "causative_agent": "Cercospora zeae-maydis",
-        "symptoms": {
-          "1": "Small necrotic spots with chlorotic halos on leaves which expand to rectangular lesions 1-6 cm in length and 2-4 mm wide.",
-          "2": "As the lesions mature they turn tan in color and finally gray.",
-          "3": "Lesions have sharp, parallel edges and are opaque.",
-          "4": "Disease can develop quickly causing complete blighting of leaves and plant death."
-        },
-        "cause": "Fungus",
-        "comments": {
-          "1": "Disease emergence is favored in areas where a corn crop is followed by more corn with no rotastion.",
-          "2": "Severity and incidence of disease is likely die to continuous corn culture with minimum tillage and the use of susceptible hybrids in in the midwestern corn belt of the USA.",
-          "3": "Prolonged periods of foggy or cloudy weather can cause severe Cercopora epidemics."
-        },
-        "management": {
-          "1": "Plant corn hybrids with resistance to the disease.",
-          "2": "Crop rotation and plowing debris into soil may reduce levels of inoculum in the soil but may not provide control in areas where the disease is prevalent.",
-          "3": "Foliar fungicides may be economically viable for some high yeilding susceptible hybrids."
-        }
-      },
-      "Corn_(maize)___Common_rust_": {
-        "name": "Corn_(maize)___Common_rust",
-        "causative_agent": "Puccinia sorghi",
-        "symptoms": {
-          "1": "Oval or elongated cinnamon brown pustules on upper and lower surfaces of leaves.",
-          "2": "Pustules rupture and release powdery red spores.",
-          "3": "Pustules turn dark brown-black as they mature and release dark brown powdery spores.",
-          "4": "If infection is severe, pustules may appear on tassels and ears and leaves may begin to yellow.",
-          "5": "In partially resistant corn hybrids, symptoms appear as chlorotic or necrotic flecks on the leaves which release little or no spore."
-        },
-        "cause": "Fungus",
-        "comments": {
-          "1": "Disease is spread by wind-borne spores.",
-          "2": "Some of the most popularly grown sweet corn varieties have little or no resistance to the disease."
-        },
-        "management": {
-          "1": "The most effective method of controlling the disease is to plant resistant hybrids.",
-          "2": "Application of appropriate fungicides may provide some degree on control and reduce disease severity.",
-          "3": "Fungicides are most effective when the amount of secondary inoculum is still low, generally when plants only have a few rust pustules per leaf."
-        }
-      },
-      "Corn_(maize)___Northern_Leaf_Blight": {
-        "name": "Corn_(maize)___Northern_Leaf_Blight",
-        "causative_agent": "Exserohilum turcicum",
-        "symptoms": {
-          "1": "In the beginning we will notice elliptical gray-green lesions on leaves. As the disease process this lesions become pale gray to tan color.",
-          "2": "Later stage the lesions looks dirty due to dark gray spores particularly under lower leaf surface.",
-          "3": "The disease can be easily identified in the field due to its long, narrow lesions which are unrestricted by veins."
-        },
-        "cause": "Fungus",
-        "comments": {
-          "1": "The disease mainly spread through rain splash and wind."
-        },
-        "management": {
-          "1": "Follow proper tillage to reduce fungus inoculum from crop debris.",
-          "2": "Follow crop rotation with non host crop.",
-          "3": "Grow available resistant varieties.",
-          "4": "In severe case of disease incidence apply suitable fungicide."
-        }
-      },
-      "Corn_(maize)___healthy": {
-        "name": "Corn_(maize)___healthy"
+      "management": {
+        "1": "1: Remove all leaves dropped from tree in the fall and compost to prevent any diseases surviving in debris.",
+        "2": "2: Application of zinc and fertilizer grade urea in the Fall may be necessary to speed leaf drop, lime should then be added to fallen leaves.",
+        "3": "3: Fungicide application may be necessary in areas where leaves remain wet for periods in excess of 9 hours.",
+        "4": "4: Fungicides such as copper soaps and Bordeaux mixture should be applied if there is a chance of wet period as soon as leaf tips emerge."
       }
-    }
+    },
+    {
+        "name": "Apple___Black_rot",
+        "causative_agent": "Causative Agent: Botryosphaeria obtusa",
+        "symptoms": {
+          "1": "1: Purple flecks or circular lesions which are brown in the centre and purple at margin.",
+          "2": "2: Red flecks, purple lesions and/or brown black rings on fruit.",
+          "3": " ",
+          "4": " ",
+          "5": " "
+        },
+        "cause": "Cause: Fungus",
+        "comments": {
+          "1": "1: Spores can overwinter in twigs or fruit remaining on the tree and spread during rainfall.",
+          "2": " "
+        },
+        "management": {
+          "1": "1: Remove dead wood, mummified fruit and cankers from trees to reduce spread of disease.",
+          "2": "2 Burn any prunings that have been made from the tree.",
+          "3": "3: Disease can be controlled by applying fungicides from silver tip to harvest.",
+          "4": " "
+        }
+      }
   ]
 }

@@ -11,4 +11,22 @@
     <string name="know_more">Know More</string>
     <string name="disease_name">Disease Name</string>
     <string name="prediction_conf">Prediction Confidence %</string>
+    <string name="name">Disease Name</string>
+    <string name="tvCausativeAgent">Causative Agent</string>
+    <string name="tvCause">Cause</string>
+    <string name="tvSymptoms">Symptoms</string>
+    <string name="symptoms1">First Symptoms</string>
+    <string name="symptoms2">Second symptoms</string>
+    <string name="symptoms3">Third symptoms</string>
+    <string name="symptoms4">Forth symptoms</string>
+    <string name="symptoms5">Fifth symptoms</string>
+    <string name="comments">Comments</string>
+    <string name="tvComments1">First Comment</string>
+    <string name="tvComments2">Second Comment</string>
+    <string name="management">Management</string>
+    <string name="tvManagement1">First Management</string>
+    <string name="tvManagement2">Second Management</string>
+    <string name="tvManagement3">Third Management</string>
+    <string name="tvManagement4">Forth Management</string>
+    <string name="confiPercent">Confidence Percentage</string>
 </resources>

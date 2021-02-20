@@ -8,72 +8,8 @@
     android:textAlignment="center"
     tools:context=".DetailsActivity">
 
-    <ScrollView
-        android:id="@+id/scrollViewCont"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:id="@+id/linearLayoutV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/diseaseNameTV"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="@string/disease_name"
-                android:textAlignment="center"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/predictConfidenceTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/prediction_conf"
-                android:textAlignment="center"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <View
-                android:id="@+id/divider"
-                android:layout_width="match_parent"
-                android:layout_height="7dp"
-                android:background="?android:attr/listDivider" />
-
-            <TextView
-                android:id="@+id/causative_agentTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="causative agent" />
-
-            <TextView
-                android:id="@+id/symptomsTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="symptoms" />
-
-            <TextView
-                android:id="@+id/causeTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="cause" />
-
-            <TextView
-                android:id="@+id/commentsTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="comments" />
-
-            <TextView
-                android:id="@+id/managementTV"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="management" />
-
-        </LinearLayout>
-    </ScrollView>
-
+        android:layout_height="match_parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
