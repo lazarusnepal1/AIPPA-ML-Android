@@ -54,7 +54,7 @@ class DetailsActivity : AppCompatActivity() {
         confPerStr = predictionConfidence
         diseaseNameStr = diseaseName
 
-//        JSON
+//        Read JSON formatted file and write it into classified ArrayList format
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
         val linearLayoutManager = LinearLayoutManager(applicationContext)
         recyclerView.layoutManager = linearLayoutManager
@@ -90,12 +90,15 @@ class DetailsActivity : AppCompatActivity() {
         } catch (e: JSONException){
             e.printStackTrace()
         }
+
+//        send data for dynamic view via CustomAdapter constructor
         val customAdapter = CustomAdapter(this@DetailsActivity,
                 diseaseNameJSON, diseaseNameStr,  confPerStr, causativeAgentJSON, causeJSON, symptoms1JSON,
         symptoms2JSON, symptoms3JSON, symptoms4JSON, symptoms5JSON, comments1JSON, comments2JSON,
         management1JSON, management2JSON, management3JSON, management4JSON)
         recyclerView.adapter = customAdapter
     }
+
     private fun loadJSONFromAsset(): String{
         val json: String?
         try {

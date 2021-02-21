@@ -36,6 +36,7 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
         return MyViewHolder(v)
     }
 
+//    View impl
     override fun onBindViewHolder(holder: CustomAdapter.MyViewHolder, position: Int) {
         Log.d("if condition:", "\n prediction: $diseaseNameString \n JSON:" +diseaseNameJSON[position])
 
@@ -68,6 +69,7 @@ RecyclerView.Adapter<CustomAdapter.MyViewHolder>(){
         return diseaseNameJSON.size
     }
 
+//    View defination
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         var diseaseNameTV: TextView = itemView.findViewById<View>(R.id.tvDiseaseName) as TextView
         var diseaseN: TextView = itemView.findViewById<View>(R.id.tvDiseaseName) as TextView

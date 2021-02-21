@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
             mBitmap = Bitmap.createScaledBitmap(mBitmap, mInputSize, mInputSize, true)
             leafImageView.setImageBitmap(mBitmap)
         }
+//        functional buttons
         fab_camera.setOnClickListener{
 //            Log.d("\n camera!", "Camera button was clicked!\n")
             val callCameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
@@ -55,11 +56,12 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(callGalleryIntent, mGalleryRequestCode)
         }
         detect_btn.setOnClickListener{
-            Log.d("\n clicked!", "Detect button was clicked!\n")
+//            Log.d("\n clicked!", "Detect button was clicked!\n")
             val results = mClassifier.recognizeImage(mBitmap).firstOrNull()
 //            predictedTextView.text= "Name: "+results?.title+"\n Confidence: "+confidencePer
 //            Log.d("predicted Result", "\n Disease Name: " + results.title + "\n Confidence: " + confidencePer + " %")
 
+//            if prediction result is empty process  could not be processed
             if (results != null) {
                 val confidencePer = 100* results?.confidence!!
                 val intentDetailsActivity = Intent(this, DetailsActivity::class.java).apply{
